@@ -44,7 +44,11 @@ library Array {
 contract Lab1 {
     using Array for uint[];
 
-    uint[] public data = [6,2,7,5,1,6,4,0,9,3];
+    uint[] public data;
+
+    function setArray(uint[] memory _data) public {
+        data = _data;
+    }
 
     function sortData() public {
         data.sort();
