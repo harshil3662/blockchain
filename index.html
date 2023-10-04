@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple NFT Minting</title>
+</head>
+<body>
+    <h1>Simple NFT Minting</h1>
+    <div id="walletAddress"></div>
+    <div>
+        <label for="ipfsUrl">IPFS URL:</label>
+        <input type="text" id="ipfsUrl" placeholder="Enter IPFS URL">
+        <button onclick="mintNFT()">Mint NFT</button>
+    </div>
+
+    <div id="nfts">
+        <!-- NFTs will be displayed here -->
+    </div>
+
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
